@@ -1,0 +1,58 @@
+[
+  {
+    "expression": "true | false",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "x<6 & x>3",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "x<6 & x>3 | y>=7",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "(x<6 & x>3 | y>=7) | (z>9)",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "x>=exp(10+z)",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "sin(x)<cos(y) | cos(x) > sin(Y)",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "x<",
+    "valid": "No",
+    "error": "Encountered \"\" at line 1, column 1.\nWas expecting one of:\n    ",
+    "coloumn": 1,
+    "line": 1
+  },
+  {
+    "expression": "x>6 |",
+    "valid": "No",
+    "error": "Encountered \" \"|\" \"| \"\" at line 1, column 5.\nWas expecting:\n    <EOF> \n    ",
+    "coloumn": 5,
+    "line": 1
+  }
+]

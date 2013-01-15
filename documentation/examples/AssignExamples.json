@@ -1,0 +1,93 @@
+[
+  {
+    "expression": "a:=5",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "b==6",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "x'==floor(y) & y':=sin(z)",
+    "valid": "No",
+    "error": "Encountered \" \"&\" \"& \"\" at line 1, column 14.\nWas expecting:\n    <EOF> \n    ",
+    "coloumn": 1,
+    "line": 1
+  },
+  {
+    "expression": "abc:=y*z^(10+x)+sin(x)",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "X := 12 ^ (10 * x + y) + cos((x+5)^2+y*5)",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "sin := cos(x)",
+    "valid": "No",
+    "error": "Encountered \" \"sin\" \"sin \"\" at line 1, column 1.\nWas expecting:\n    <ID> ...\n    ",
+    "coloumn": 1,
+    "line": 1
+  },
+  {
+    "expression": "_flow := v \n    & X' == 12",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": " & X == 12",
+    "valid": "No",
+    "error": "Encountered \" \"&\" \"& \"\" at line 1, column 2.\nWas expecting:\n    <ID> ...\n    ",
+    "coloumn": 2,
+    "line": 1
+  },
+  {
+    "expression": "X == 12 &x':=3.4",
+    "valid": "No",
+    "error": "Encountered \" \"&\" \"& \"\" at line 1, column 9.\nWas expecting:\n    <EOF> \n    ",
+    "coloumn": 9,
+    "line": 1
+  },
+  {
+    "expression": "var:=exp(10+y)",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "y:=3. & z'==.5",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "t':=r",
+    "valid": "No",
+    "error": "Encountered \"\" at line 1, column 2.\nWas expecting one of:\n    ",
+    "coloumn": 2,
+    "line": 1
+  },
+  {
+    "expression": "x=5",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 4.  Encountered: <EOF> after : \"=5\"",
+    "coloumn": 4,
+    "line": 1
+  }
+]

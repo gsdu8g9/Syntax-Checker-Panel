@@ -1,0 +1,93 @@
+[
+  {
+    "expression": "a=5",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 4.  Encountered: <EOF> after : \"=5\"",
+    "coloumn": 4,
+    "line": 1
+  },
+  {
+    "expression": "b==6",
+    "valid": "Yes",
+    "error": "",
+    "coloumn": 0,
+    "line": 0
+  },
+  {
+    "expression": "x=floor(y) & y'=sin(z)",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 3.  Encountered: \"f\" (102), after : \"=\"",
+    "coloumn": 3,
+    "line": 1
+  },
+  {
+    "expression": "abc=y*z^(10+x)+sin(x)",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 5.  Encountered: \"y\" (121), after : \"=\"",
+    "coloumn": 5,
+    "line": 1
+  },
+  {
+    "expression": "X = 12 ^ (10 * x + y) + cos((x+5)^2+y*5)",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 4.  Encountered: \" \" (32), after : \"=\"",
+    "coloumn": 4,
+    "line": 1
+  },
+  {
+    "expression": "sin= cos(x)",
+    "valid": "No",
+    "error": "Encountered \" \"sin\" \"sin \"\" at line 1, column 1.\nWas expecting:\n    <ID> ...\n    ",
+    "coloumn": 1,
+    "line": 1
+  },
+  {
+    "expression": "_flow = v \n    & X= 12",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 8.  Encountered: \" \" (32), after : \"=\"",
+    "coloumn": 8,
+    "line": 1
+  },
+  {
+    "expression": " & X == 12",
+    "valid": "No",
+    "error": "Encountered \" \"&\" \"& \"\" at line 1, column 2.\nWas expecting:\n    <ID> ...\n    ",
+    "coloumn": 2,
+    "line": 1
+  },
+  {
+    "expression": "X = 12 &x'=.4",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 4.  Encountered: \" \" (32), after : \"=\"",
+    "coloumn": 4,
+    "line": 1
+  },
+  {
+    "expression": "var=exp(10+y)",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 5.  Encountered: \"e\" (101), after : \"=\"",
+    "coloumn": 5,
+    "line": 1
+  },
+  {
+    "expression": "y=3. & z'=.5",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 3.  Encountered: \"3\" (51), after : \"=\"",
+    "coloumn": 3,
+    "line": 1
+  },
+  {
+    "expression": "t'=r",
+    "valid": "No",
+    "error": "Lexical error at line 1, column 5.  Encountered: <EOF> after : \"=r\"",
+    "coloumn": 5,
+    "line": 1
+  },
+  {
+    "expression": "x:=5",
+    "valid": "No",
+    "error": "Encountered \" \":=\" \":= \"\" at line 1, column 2.\nWas expecting:\n    \"==\" ...\n    ",
+    "coloumn": 2,
+    "line": 1
+  }
+]

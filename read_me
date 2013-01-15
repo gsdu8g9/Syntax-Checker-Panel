@@ -1,0 +1,3 @@
+This is a Java implementation for a Syntax Checker Text Panel buile using the javaCC Library.
+
+To run the code, build it with google-gson-2.2.1 library available for working with .json files, used to store examples.
